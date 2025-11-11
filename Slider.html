@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Car - Slider</title>
+    </head>
+    <body>
+        <section>
+            <img class="mySlides" src="toyota-fortuner-top-model-2755cc-automatic-transmission-turbo-engine-6-speed-gear-free-png.png" style="height: 500px;">
+            <img class="mySlides" src="png-clipart-mahindra-scorpio-getaway-mahindra-mahindra-mahindra-xuv500-sport-utility-vehicle-car-car-india-thumbnail.png" style="height: 500px;">
+            <img class="mySlides" src="1f428ed25b47ee592594642f90984df0.jpg" style="height: 500px;">
+            <img class="mySlides" src="images (2).jpg" style="height: 500px;">
+            <img class="mySlides" src="images (3).jpg" style="height: 500px;">
+            <img class="mySlides" src="pngimg.com - rolls_royce_PNG50.png" style="height: 500px;">
+            <img class="mySlides" src="download (2).jpg" style="height: 500px;">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                     myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+            }
+
+       
+        </script>
+    </body>
+</html>
+
