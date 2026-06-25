@@ -1,0 +1,6 @@
+let cars = ["BMW", "Audi", "Mercedes", "Toyota", "Honda"];
+
+let removedCar = cars.pop();
+
+console.log(removedCar);
+console.log(cars);
